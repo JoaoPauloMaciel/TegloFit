@@ -18,4 +18,4 @@ class PessoaSerializer(serializers.HyperlinkedModelSerializer):
 class PesagemSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Pesagem
-        fields = ('id','owner','peso')
+        fields = ('id','owner','peso','dataEHoraDePesagem',)
